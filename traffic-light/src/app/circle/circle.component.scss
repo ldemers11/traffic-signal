@@ -1,0 +1,24 @@
+.circle {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 1rem;
+  box-shadow: 5px 5px 5px grey;
+}
+
+.circle-red {
+  background-color: red;
+}
+
+.circle-green {
+  background-color: green;
+}
+
+.circle-yellow {
+  background-color: yellow;
+}
