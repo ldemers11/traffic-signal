@@ -32,10 +32,10 @@ public class ScheduledSignal {
         while (true) {
             int randomTime = ThreadLocalRandom.current().nextInt(3, 10 + 1);
             try {
-                logger.info("waiting: " + randomTime);
+                logger.finest("waiting: " + randomTime);
                 Thread.sleep(randomTime * SECONDS_TO_MILLISECONDS);
                 state = state.nextState();
-                logger.info("state: " + state.toString());
+                logger.finest("state: " + state.toString());
                 this.template.convertAndSend("/all/messages", state.toString());
 
             } catch (InterruptedException e) {
@@ -47,9 +47,9 @@ public class ScheduledSignal {
 
     @EventListener(ApplicationReadyEvent.class)
     public void startMessages() {
-        logger.info("Starting to send messages");
+        logger.finest("Starting to send messages");
         this.sendMessages();
-        logger.info("Finished sendMessages");
+        logger.finest("Finished sendMessages");
 
     }
 }

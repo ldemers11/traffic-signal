@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ljd</groupId>
-	<artifactId>trafficSignal</artifactId>
+	<artifactId>traffic-signal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>trafficSignal</name>
 	<description>Traffic signal service</description>
