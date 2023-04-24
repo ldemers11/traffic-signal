@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  traffic-light:
+    image: traffic-light:latest
+    ports:
+      - 4200:4200
+    container_name: traffic-light
